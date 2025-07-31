@@ -1,2 +1,3 @@
 # patrickmaier.github.io
-GitHub Pages source
+Source for Patrick Maier's GitHub Pages
+
