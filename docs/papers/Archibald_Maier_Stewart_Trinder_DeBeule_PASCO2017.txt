@@ -1,0 +1,39 @@
+Blair Archibald, Patrick Maier, Robert Stewart, Phil Trinder, Jan De Beule
+
+Towards Generic Scalable Parallel Combinatorial Search
+
+ABSTRACT:
+Combinatorial search problems in mathematics, e.g. in finite geometry,
+are notoriously hard; a state-of-the-art backtracking search algorithm
+can easily take months to solve a single problem.  There is clearly
+demand for parallel combinatorial search algorithms scaling to
+hundreds of cores and beyond.  However, backtracking combinatorial
+searches are challenging to parallelise due to their sensitivity to
+search order and due to the their irregularly shaped search trees.
+Moreover, scaling parallel search to hundreds of cores generally
+requires highly specialist parallel programming expertise.
+
+This paper proposes a generic scalable framework for solving hard
+combinatorial problems.  Key elements are distributed memory task
+parallelism (to achieve scale), work stealing (to cope with
+irregularity), and generic algorithmic skeletons for combinatorial
+search (to reduce the parallelism expertise required).  We outline two
+implementations: a mature Haskell Tree Search Library (HTSL) based
+around algorithmic skeletons and a prototype C++ Tree Search Library
+(CTSL) that uses hand coded applications.
+
+Experiments on maximum clique problems and on a problem in finite
+geometry, the search for spreads in H(4,2^2), show that
+(1) CTSL consistently outperforms HTSL on sequential runs, and
+(2) both libraries scale to 200 cores, e.g. speeding up spreads search
+    by a factor of 81 (HTSL) and 60 (CTSL), respectively.
+This demonstrates the potential of our generic framework for scaling
+parallel combinatorial search to large distributed memory platforms.
+
+KEYWORDS:
+Combinatorics;
+Backtracking;
+Distributed Computing;
+Parallelism;
+Clique Search;
+Finite Geometry

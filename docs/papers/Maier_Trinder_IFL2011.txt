@@ -1,0 +1,20 @@
+Patrick Maier, Phil Trinder
+
+Implementing a High-level Distributed-Memory Parallel Haskell in Haskell
+
+ABSTRACT:
+We present the initial design, implementation and preliminary
+evaluation of a new distributed-memory parallel Haskell, HdpH.
+The language is a shallowly embedded parallel extension of Haskell
+that supports high-level semi-explicit parallelism, is scalable, and
+has the potential for fault tolerance. The HdpH implementation is
+designed for maintainability without compromising performance too
+severely.  To provide maintainability the implementation is modular
+and layered and, crucially, coded in vanilla Concurrent Haskell.
+Initial performance results are promising for three simple data
+parallel or divide-and-conquer programs, e.g., an absolute speedup
+of 135 on 168 cores of a Beowulf cluster.
+
+KEYWORDS:
+parallel functional programming,
+implementation.

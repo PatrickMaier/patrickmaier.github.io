@@ -1,0 +1,40 @@
+Reimer Behrends, Kevin Hammond, Vladimir Janjic, Alex Konovalov, Steve Linton, Hans-Wolfgang Loidl, Patrick Maier, Phil Trinder
+
+HPC-GAP: engineering a 21st-century high-performance computer algebra system
+
+ABSTRACT:
+Symbolic computation has underpinned a number of key advances in
+Mathematics and Computer Science.  Applications are typically large
+and potentially highly parallel, making them good candidates for
+parallel execution at a variety of scales from multi-core to
+high-performance computing systems.  However, much existing work on
+parallel computing is based around numeric rather than symbolic
+computations.  In particular, symbolic computing presents particular
+problems in terms of varying granularity and irregular task sizes that
+do not match conventional approaches to parallelisation.  It also
+presents problems in terms of the structure of the algorithms and
+data.
+
+This paper describes a new implementation of the free open-source GAP
+computational algebra system that places parallelism at the heart of
+the design, dealing with the key scalability and cross-platform
+portability problems.  We provide three system layers that deal with
+the three most important classes of hardware: individual shared memory
+multi-core nodes, mid-scale distributed clusters of (multi-core)
+nodes, and full-blown HPC systems, comprising large-scale
+tightly-connected networks of multi-core nodes.  This requires us to
+develop new cross-layer programming abstractions in the form of new
+domain-specific skeletons that allow us to seamlessly target different
+hardware levels.  Our results show that, using our approach, we can
+achieve good scalability and speedups for two realistic exemplars, on
+high-performance systems comprising up to 32,000 cores, as well as on
+ubiquitous multi-core systems and distributed clusters.  The work
+reported here paves the way towards full scale exploitation of
+symbolic computation by high-performance computing systems, and we
+demonstrate the potential with two major case studies.
+
+KEYWORDS:
+Parallelism;
+Multicore;
+High-performance computing;
+Computational algebra

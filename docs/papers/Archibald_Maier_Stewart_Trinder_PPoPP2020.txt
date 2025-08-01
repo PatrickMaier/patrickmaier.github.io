@@ -1,0 +1,32 @@
+Blair Archibald, Patrick Maier, Robert Stewart, Phil Trinder
+
+YewPar: Skeletons for Exact Combinatorial Search
+
+ABSTRACT:
+Combinatorial search is central to many applications, yet the huge
+irregular search trees and the need to respect search heuristics make
+it hard to parallelise. We aim to improve the reuse of intricate
+parallel search implementations by providing the first general purpose
+scalable parallel framework for exact combinatorial search, YewPar.
+
+We make the following contributions.
+(1) We present a novel formal model of parallel backtracking search,
+    covering enumeration, decision, and optimisation search.
+(2) We introduce Lazy Node Generators as a uniform API for search tree
+    generation.
+(3) We present the design and implementation of 12 widely applicable
+    algorithmic skeletons for tree search on shared and distributed
+    memory architectures.
+(4) Uniquely in the field we demonstrate how a wide range of parallel
+    search applications can easily be constructed by composing Lazy
+    Node Generators and the search skeletons.
+(5) We report a systematic performance analysis of all 12 YewPar
+    skeletons on standard instances of 7 search applications,
+    investigating skeleton overheads and scalability up to 255 workers
+    on 17 distributed locations.
+
+KEYWORDS:
+Combinatorial Search;
+Algorithmic Skeletons;
+Distributed Memory Parallelism;
+HPX

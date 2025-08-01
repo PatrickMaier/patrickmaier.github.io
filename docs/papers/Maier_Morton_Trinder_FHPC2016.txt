@@ -1,0 +1,37 @@
+Patrick Maier, John Magnus Morton, Phil Trinder
+
+JIT Costing Adaptive Skeletons for Performance Portability
+
+ABSTRACT:
+The proliferation of widely available, but very different, parallel
+architectures makes the ability to deliver good parallel performance
+on a range of architectures, or performance portability, highly
+desirable. Irregular parallel problems, where the number and size of
+tasks is unpredictable, are particularly challenging and require
+dynamic coordination.
+
+The paper outlines a novel approach to delivering portable parallel
+performance for irregular parallel programs. The approach combines JIT
+compiler technology with dynamic scheduling and dynamic transformation
+of declarative parallelism.
+
+We specify families of algorithmic skeletons plus equations for
+rewriting skeleton expressions.  We present the design of a framework
+that unfolds skeletons into task graphs, dynamically schedules tasks,
+and dynamically rewrites skeletons, guided by a lightweight JIT
+trace-based cost model, to adapt the number and granularity of tasks
+for the architecture.  
+
+We outline the system architecture and prototype implementation in
+Racket/Pycket. As the current prototype does not yet automatically
+perform dynamic rewriting we present results based on manual offline
+rewriting, demonstrating that
+(i)  the system scales to hundreds of cores given enough parallelism
+     of suitable granularity, and
+(ii) the JIT trace cost model predicts granularity accurately enough
+     to guide rewriting towards a good adaptive transformation.
+
+KEYWORDS:
+parallelism;
+performance portability;
+cost model

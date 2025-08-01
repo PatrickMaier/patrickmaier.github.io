@@ -1,0 +1,36 @@
+Mila Goronova, Gabriela Ochoa, Patrick Maier, Andrew Hoyle
+
+Evolutionary optimisation of antibiotic dosing regimens for bacteria
+with different levels of resistance
+
+ABSTRACT:
+Antimicrobial resistance is one of the biggest threats to global
+health, food security, and development. Antibiotic overuse and misuse
+are the main drivers for the emergence of resistance. It is crucial to
+optimise the use of existing antibiotics in order to improve medical
+outcomes, decrease toxicity and reduce the emergence of resistance. We
+formulate the design of antibiotic dosing regimens as an optimisation
+problem, and use an evolutionary algorithm suited to continuous
+optimisation (differential evolution) to solve it. Regimens are
+represented as vectors of real numbers encoding daily doses, which can
+vary across the treatment duration. A stochastic mathematical model of
+bacterial infections with tuneable resistance levels is used to
+evaluate the effectiveness of evolved regimens. The objective is to
+minimise the treatment failure rate, subject to a constraint on the
+maximum total antibiotic used. We consider simulations with different
+levels of bacterial resistance, two ways of administering the drug
+(orally and intravenously), as well as coinfections with two strains
+of bacteria. Our approach produced effective dosing regimens, with an
+average improvement in lowering the failure rate 30%, when compared
+with standard fixed-daily-dose regimens with the same total amount of
+antibiotic.
+
+KEYWORDS:
+Antimicrobial resistance;
+Evolutionary algorithms;
+Differential evolution;
+Optimisation;
+Mathematical modelling;
+Pharmacokinetics/pharmacodynamics modelling;
+MIC;
+Antibiotic dosing regimens

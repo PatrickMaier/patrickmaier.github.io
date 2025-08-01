@@ -1,0 +1,29 @@
+Patrick Maier, Robert Stewart, Phil Trinder
+
+The HdpH DSLs for Scalable Reliable Computation
+
+ABSTRACT:
+The statelessness of functional computations facilitates both
+parallelism and fault recovery. Faults and non-uniform communication
+topologies are key challenges for emergent large scale parallel
+architectures.  We report on HdpH and HdpH-RS, a pair of Haskell DSLs
+designed to address these challenges for irregular task-parallel
+computations on large distributed-memory architectures.  Both DSLs
+share an API combining explicit task placement with sophisticated work
+stealing.  HdpH focuses on scalability by making placement and
+stealing topology aware whereas HdpH-RS delivers reliability by means
+of fault tolerant work stealing.
+
+We present operational semantics for both DSLs and investigate
+conditions for semantic equivalence of HdpH and HdpH-RS programs, that
+is, conditions under which topology awareness can be transparently
+traded for fault tolerance.  We detail how the DSL implementations
+realise topology awareness and fault tolerance.  We report an initial
+evaluation of scalability and fault tolerance on a 256-core cluster
+and on up to 32K cores of an HPC platform.
+
+KEYWORDS:
+embedded domain specific languages;
+parallelism;
+topology awareness;
+fault tolerance

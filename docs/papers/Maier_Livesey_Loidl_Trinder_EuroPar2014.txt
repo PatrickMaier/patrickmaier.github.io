@@ -1,0 +1,26 @@
+Patrick Maier, Daria Livesey, Hans-Wolfgang Loidl, Phil Trinder
+
+High-Performance Computer Algebra: A Hecke Algebra Case Study
+
+ABSTRACT:
+We describe the first ever parallelisation of an algebraic computation
+at modern HPC scale.  Our case study poses challenges typical of the
+domain: it is a multi-phase application with dynamic task creation and
+irregular parallelism over complex control and data structures.
+
+Our starting point is a sequential algorithm for finding invariant
+bilinear forms in the representation theory of Hecke algebras,
+implemented in the GAP computational group theory system.  After
+optimising the sequential code we develop a parallel algorithm that
+exploits the new skeleton-based SGP2 framework to parallelise the
+three most computationally-intensive phases.  To this end we develop a
+new domain-specific skeleton, parBufferTryReduce.  We report good
+parallel performance both on a commodity cluster and on a national
+HPC, delivering speedups up to 548 over the optimised sequential
+implementation on 1024 cores.
+
+KEYWORDS:
+Distributed-memory parallelism;
+Algorithmic skeletons,
+Computer algebra;
+Case study

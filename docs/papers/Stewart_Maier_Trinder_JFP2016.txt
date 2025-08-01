@@ -1,0 +1,46 @@
+Rob Stewart, Patrick Maier, Phil Trinder
+
+Transparent fault tolerance for scalable functional computation
+
+ABSTRACT:
+Reliability is set to become a major concern on emergent large-scale
+architectures. While there are many parallel languages, and indeed
+many parallel functional languages, very few address reliability.  The
+notable exception is the widely emulated Erlang distributed actor
+model that provides explicit supervision and recovery of actors with
+isolated state.
+
+We investigate scalable transparent fault tolerant functional
+computation with automatic supervision and recovery of tasks. We do so
+by developing HdpH-RS, a variant of the Haskell distributed parallel
+Haskell (HdpH) DSL with Reliable Scheduling. Extending the distributed
+work stealing protocol of HdpH for task supervision and recovery is
+challenging. To eliminate elusive concurrency bugs, we validate the
+HdpH-RS work stealing protocol using the SPIN model checker.
+
+HdpH-RS differs from the actor model in that its principal entities
+are tasks, i.e. independent stateless computations, rather than
+isolated stateful actors. Thanks to statelessness, fault recovery can
+be performed automatically and entirely hidden in the HdpH-RS runtime
+system. Statelessness is also key for proving a crucial property of
+the semantics of HdpH-RS: fault recovery does not change the result of
+the program, akin to deterministic parallelism.
+
+HdpH-RS provides a simple distributed fork/join-style programming
+model, with minimal exposure of fault tolerance at the language level,
+and a library of higher level abstractions such as algorithmic
+skeletons. In fact, the HdpH-RS DSL is exactly the same as the HdpH
+DSL, hence users can opt in or out of fault tolerant execution without
+any refactoring.
+
+Computations in HdpH-RS are always as reliable as the root node, no
+matter how many nodes and cores are actually used. We benchmark
+HdpH-RS on conventional clusters and an HPC platform: all benchmarks
+survive Chaos Monkey random fault injection; the system scales well
+e.g. up to 1,400 cores on the HPC; reliability and recovery overheads
+are consistently low even at scale.
+
+KEYWORDS:
+Parallel functional programming;
+Fault tolerance;
+Work stealing

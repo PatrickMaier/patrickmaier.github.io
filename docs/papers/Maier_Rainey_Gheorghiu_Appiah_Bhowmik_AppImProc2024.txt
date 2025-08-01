@@ -1,0 +1,29 @@
+Patrick Maier, James Rainey, Elena Gheorghiu, Kofi Appiah, Deepayan Bhowmik
+
+Digit Classification using Biologically Plausible Neuromorphic Vision
+
+ABSTRACT:
+Despite tremendous advancement in computer vision, especially with
+deep learning, understanding scenes in the wild remains
+challenging. Even modern image classification models often misclassify
+when presented with out-of-distribution inputs despite having been
+trained on tens of millions of images or more. Moreover, training
+modern deep-learning classifiers requires a lot of energy due to the
+need to iterate many times over the training set, constantly updating
+billions of model parameters. Owing to problems with generalisability
+and robustness as well as efficiency, there is growing interest in
+computer vision to mimic biological vision (e.g., human vision) in the
+hope that doing so will require fewer resources for training both in
+terms of energy and in terms of data sets while increasing robustness
+and generalisability. This paper proposes a biologically plausible
+neuromorphic vision system that is based on a spiking neural network
+and is evaluated on the classification of hand-written digits from the
+MNIST dataset. The experimental outcome indicates improved robustness
+of the proposed approach over state-of-the-art considering non-digit
+detection.
+
+KEYWORDS:
+Neuromorphic Vision;
+Digit Classification;
+Spiking Neural Network;
+Human Vision System

@@ -1,0 +1,21 @@
+Blair Archibald, Patrick Maier, Robert Stewart, Phil Trinder
+
+Implementing YewPar: a Framework for Parallel Tree Search
+
+ABSTRACT:
+Combinatorial search is central to many applications yet hard to
+parallelise.  We argue for improving the reuse of parallel searches,
+and present the design and implementation of a new parallel search
+framework. YewPar generalises search by abstracting search tree
+generation, and by providing algorithmic skeletons that support three
+search types, together with a set of search coordination
+strategies. The evaluation shows that the cost of YewPar generality is
+low (6.1%); global knowledge is inexpensively shared between workers;
+irregular tasks are effectively distributed; and YewPar delivers good
+runtimes, speedups and efficiency with up to 255 workers on 17
+localities.
+
+KEYWORDS:
+Exact Combinatorial Search;
+Parallel Search;
+HPX
