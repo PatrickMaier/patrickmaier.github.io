@@ -16,5 +16,5 @@ parallel or divide-and-conquer programs, e.g., an absolute speedup
 of 135 on 168 cores of a Beowulf cluster.
 
 KEYWORDS:
-parallel functional programming,
-implementation.
+parallel functional programming;
+implementation

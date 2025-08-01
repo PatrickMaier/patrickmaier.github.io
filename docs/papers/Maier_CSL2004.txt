@@ -1,0 +1,22 @@
+Patrick Maier
+
+Intuitionistic LTL and a New Characterization of Safety and Liveness
+
+ABSTRACT:
+Classical linear-time temporal logic (LTL) is capable of specifying of
+and reasoning about infinite behaviors only.  While this is
+appropriate for specifying non-terminating reactive systems, there are
+situations (e.g. assume-guarantee reasoning, run-time verification)
+when it is desirable to be able to reason about finite and infinite
+behaviors.  We propose an interpretation of the operators of LTL on
+finite and infinite behaviors, which defines an intuitionistic
+temporal logic (ILTL).  We compare the expressive power of LTL and
+ILTL.  We demonstrate that ILTL is suitable for assume-guarantee
+reasoning and for expressing properties that relate finite and
+infinite behaviors. In particular, ILTL admits an elegant logical
+characterization of safety and liveness properties.
+
+KEYWORDS:
+Linear-time temporal logic;
+intuitionistic logic;
+safety and liveness properties

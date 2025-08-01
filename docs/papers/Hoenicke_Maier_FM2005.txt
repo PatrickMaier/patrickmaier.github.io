@@ -1,0 +1,23 @@
+Jochen Hoenicke, Patrick Maier
+
+Model-Checking of Specifications Integrating Processes, Data and Time
+
+ABSTRACT:
+We present a new model-checking technique for CSP-OZ-DC, a
+combination of CSP, Object-Z and Duration Calculus, that allows
+reasoning about systems exhibiting communication, data and real-time
+aspects.  As intermediate layer we will use a new kind of timed
+automata that preserve events and data variables of the
+specification.  These automata have a simple operational semantics
+that is amenable to verification by a constraint-based
+abstraction-refinement model checker.  By means of a case study, a
+simple elevator parameterised by the number of floors, we show that
+this approach admits model-checking parameterised and infinite state
+real-time systems.
+
+KEYWORDS:
+combination of specification languages,
+CSP,
+Object-Z,
+Duration Calculus,
+model checking.

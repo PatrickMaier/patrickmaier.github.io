@@ -1,0 +1,31 @@
+Witold Charatonik, Lilia Georgieva, Patrick Maier
+
+Bounded Model Checking of Pointer Programs
+
+ABSTRACT:
+We propose a bounded model checking procedure for programs
+manipulating dynamically allocated pointer structures.  Our procedure
+checks whether a program execution of length n ends in an error (e.g.,
+a NULL dereference) by testing if the weakest precondition of the
+error condition together with the initial condition of the program
+(e.g., program variable x points to a circular list) is satisfiable.
+We express error conditions as formulas in the 2-variable fragment of
+the Bernays-Schoenfinkel class with equality.  We show that this
+fragment is closed under computing weakest preconditions.  We express
+the initial conditions by unary relations which are defined by monadic
+Datalog programs.
+
+Our main contribution is a small model theorem for the 2-variable
+fragment of the Bernays-Schoenfinkel class extended with least fixed
+points expressible by certain monadic Datalog programs.  The
+decidability of this extension of first-order logic gives us a bounded
+model checking procedure for programs manipulating dynamically
+allocated pointer structures.  In contrast to SAT-based bounded model
+checking, we do not bound the size of the heap a priori, but allow for
+pointer structures of arbitrary size.  Thus, we are doing bounded
+model checking of infinite state transition systems.
+
+KEYWORDS:
+decidable fragments,
+pointer verification,
+model checking.

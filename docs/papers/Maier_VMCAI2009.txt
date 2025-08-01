@@ -1,0 +1,27 @@
+Patrick Maier
+
+Deciding Extensions of the Theories of Vectors and Bags
+
+ABSTRACT:
+Vectors and bags are basic collection data structures, which are used
+frequently in programs and specifications.  Reasoning about these data
+structures is supported by established algorithms for deciding ground
+satisfiability in the theories of arrays (for vectors) and multisets
+(for bags), respectively.  Yet, these decision procedures are only
+able to reason about vectors and bags in isolation, not about their
+combination.
+
+This paper presents a decision procedure for the combination of the
+theories of vectors and bags, even when extended with a function bagof
+bridging between vectors and bags.  The function bagof converts
+vectors into the bags of their elements, thus admitting vector/bag
+comparisons.  Moreover, for certain syntactically restricted classes
+of ground formulae decidability is retained if the theory of vectors
+is extended further with a map function which applies uninterpreted
+functions to all elements of a vector.
+
+KEYWORDS:
+verification and program analysis;
+decision procedures;
+vectors;
+multisets

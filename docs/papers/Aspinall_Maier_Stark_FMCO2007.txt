@@ -1,0 +1,25 @@
+David Aspinall, Patrick Maier, Ian Stark
+
+Safety Guarantees from Explicit Resource Management
+
+ABSTRACT:
+We present a language and a program analysis that certifies the safe
+use of flexible resource management idioms, in particular advance
+reservation or "block booking" of costly resources.  This builds on
+previous work with *resource managers* that carry out runtime safety
+checks, by showing how to assist these with compile-time checks.  We
+give a small ANF-style language with explicit resource managers, and
+introduce a type and effect system that captures their runtime
+behaviour.  In this setting, we identify a notion of *dynamic safety*
+for running code, and show that dynamically safe code may be executed
+without runtime checks.  We show a similar *static safety* property
+for type-safe code, and prove that static safety implies dynamic
+safety.  The consequence is that typechecked code can be executed
+without runtime instrumentation, and is guaranteed to make only
+appropriate use of resources.
+
+KEYWORDS:
+Resource Control;
+Dynamic Resource Safety;
+Static Resource Safety;
+Type Checking

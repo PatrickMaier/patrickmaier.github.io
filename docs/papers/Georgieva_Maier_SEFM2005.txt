@@ -1,0 +1,30 @@
+Lilia Georgieva, Patrick Maier
+
+Description Logics for Shape Analysis
+
+ABSTRACT:
+Verification of programs requires reasoning about sets of program
+states.  In case of programs manipulating pointers, program states are
+pointer graphs.  Verification of such programs involves reasoning
+about unbounded sets of graphs.
+
+Three-valued shape analysis (Sagiv et. al.) is an approach based on
+explicit manipulation of 3-valued shape graphs, which abstract sets of
+pointer graphs.  Other approaches use symbolic representations,
+e.g. by describing (sets of) graphs as logical formulas.
+Unfortunately, many resulting logics are either undecidable or cannot
+express crucial properties like reachability and separation.
+
+In this paper, we investigate an alternative approach.  We study
+well-known description logics as a framework for symbolic shape
+analysis.  We propose a predicate abstraction based shape analysis,
+parameterized by description logics to represent the abstraction
+predicates.  Depending on the particular logic chosen sharing,
+reachability and separation in pointer data structures are
+expressible.
+
+KEYWORDS:
+description logics;
+shape analysis;
+program analysis;
+pointer programs

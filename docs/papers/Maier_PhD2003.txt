@@ -1,0 +1,28 @@
+Patrick Maier
+
+A Lattice-Theoretic Framework For Circular Assume-Guarantee Reasoning
+
+ABSTRACT:
+We develop an abstract lattice-theoretic framework within which we
+study soundness and other properties of circular assume-guarantee
+(A-G) rules constrained by side conditions.  We identify a particular
+side condition, non-blockingness, which admits an intelligible
+inductive proof of the soundness of circular A-G reasoning.  Besides,
+conditional circular rules based on non-blockingness turn out to be
+complete in various senses and stronger than a large class of sound
+conditional A-G rules.  In this respect, our framework enlightens the
+foundations of circular A-G reasoning.
+Due to its abstractness, the framework can be instantiated to many
+concrete settings.  We show several known circular A-G rules for
+compositional verification to be instances of our generic rules.
+Thus, we do the circularity-breaking inductive argument once to
+establish soundness of our generic rules, which then implies soundness
+of all the instances without resorting to technically complicated
+circularity-breaking arguments for each single rule.  In this respect,
+our framework unifies many approaches to circular A-G reasoning and
+provides a starting point for the systematic development of new
+circular A-G rules.
+
+KEYWORDS:
+compositional verification;
+circular assume-guarantee reasoning

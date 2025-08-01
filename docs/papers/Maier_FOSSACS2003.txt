@@ -1,0 +1,15 @@
+Patrick Maier
+
+Compositional Circular Assume-Guarantee Rules Cannot Be Sound and Complete
+
+ABSTRACT:
+Circular assume-guarantee reasoning is used for the compositional
+verification of concurrent systems. Its soundness has been studied in
+depth, perhaps because circularity makes it anything but obvious.  In
+this paper, we investigate completeness. We show that compositional
+circular assume-guarantee rules cannot be both sound and complete.
+
+KEYWORDS:
+compositional verification;
+assume-guarantee reasoning;
+completeness

@@ -1,0 +1,17 @@
+Lilia Georgieva, Patrick Maier
+
+Inductive Reasoning for Shape Invariants
+
+ABSTRACT:
+Automatic verification of imperative programs that destructively
+manipulate heap data structures is challenging.  In this paper we
+propose an approach for verifying that such programs do not corrupt
+their data structures.  We specify heap data structures such as lists,
+arrays of lists, and trees inductively as solutions of logic programs.
+We use off-the-shelf first-order theorem provers to reason about these
+specifications.
+
+KEYWORDS:
+program verification;
+application of first-order theorem provers;
+logic programs

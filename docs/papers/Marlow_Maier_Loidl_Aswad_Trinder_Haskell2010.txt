@@ -27,5 +27,5 @@ low, and the new strategies even yield slightly better speedups on
 average than the original strategies.
 
 KEYWORDS:
-parallel functional programming,
-strategies.
+parallel functional programming;
+strategies

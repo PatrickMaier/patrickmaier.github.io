@@ -1,0 +1,19 @@
+David Aspinall, Patrick Maier, Ian Stark
+
+Monitoring External Resources in Java MIDP
+
+ABSTRACT:
+We present a Java library for mobile phones which tracks and controls
+at runtime the use of potentially costly resources, such as premium
+rate text messages.  This improves on the existing framework (MIDP -
+the Mobile Information Device Profile), where for example every text
+message must be authorised explicitly by the user as it is sent.  Our
+resource management library supports richer protocols, like advance
+reservation and bulk messaging, while maintaining the security
+guarantee that attempted resource abuse is trapped.
+
+KEYWORDS:
+Runtime Monitoring;
+Resource Control;
+Java MIDP;
+Security
